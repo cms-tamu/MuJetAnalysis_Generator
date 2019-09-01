@@ -17,8 +17,8 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
         pythiaUESettings = cms.vstring(),
         processParameters = cms.vstring(
             # This section should be entirely in Pythia 8. See details in
-            #   - http://home.thep.lu.se/~torbjorn/pythia82html/HiggsProcesses.html
-            #   - http://home.thep.lu.se/~torbjorn/pythia82html/ParticleDataScheme.html
+                    #   - http://home.thep.lu.se/~torbjorn/pythia82html/HiggsProcesses.html
+                    #   - http://home.thep.lu.se/~torbjorn/pythia82html/ParticleDataScheme.html
             'Higgs:useBSM = on',     # Initialize and use the two-Higgs-doublet BSM states
             'HiggsBSM:all = off',    # Switch off all BSM Higgs production
             'HiggsBSM:gg2H2 = on',   # Switch on gg->H^0(H_2^0) scattering via loop contributions primarily from top. Code 1022.
@@ -39,7 +39,7 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
             #'Init:showAllParticleData = on', # Print a list of all particle and decay data. Warning: this will be a long list
         ),
         parameterSets = cms.vstring(
-            'pythiaUESettings',
+                'pythiaUESettings',
                 'pythia8CommonSettings',
                 'pythia8CP5Settings',
                 'processParameters'

@@ -39,7 +39,7 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
             #'Init:showAllParticleData = on', # Print a list of all particle and decay data. Warning: this will be a long list
         ),
         parameterSets = cms.vstring(
-            'pythiaUESettings',
+                'pythiaUESettings',
                 'pythia8CommonSettings',
                 'pythia8CP5Settings',
                 'processParameters'
